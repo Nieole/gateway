@@ -1,12 +1,14 @@
 package cmd
 
 import (
-	"github.com/spf13/cobra"
 	"log"
+
+	"github.com/spf13/cobra"
 )
 
 var anywhereCommands = []string{"version", "info", "help"}
 
+//RootCmd RootCmd
 var RootCmd = &cobra.Command{
 	SilenceErrors: true,
 	Use:           "网关服务",
